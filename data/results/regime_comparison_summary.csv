@@ -1,0 +1,3 @@
+regime,n_weeks,validated_edges,partial_edges,edge_survival_pct,top_corr_pair
+Hiking_or_Restrictive,83,58,14,24.1,DGS2_chg ↔ DGS10_chg (0.832)
+Pausing_or_Cutting,38,50,15,30.0,BBL_ret ↔ THAI_BANK_BASKET_ret (0.872)

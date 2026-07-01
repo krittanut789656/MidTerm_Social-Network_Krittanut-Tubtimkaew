@@ -1,0 +1,19 @@
+node_id,name,type,communityId
+EUFN,EUFN,ETF,0
+VIX,VIX,MacroFactor,0
+XLF,XLF,ETF,0
+BBL,BBL,Bank,1
+KBANK,KBANK,Bank,1
+KKP,KKP,Bank,1
+KTB,KTB,Bank,1
+SCB,SCB,Bank,1
+SET,SET Index,Index,1
+TISCO,TISCO,Bank,1
+TTB,TTB,Bank,1
+THAI_BANK_BASKET,Thai Bank Basket,DerivedFactor,1
+DGS10,US 10Y Yield,MacroFactor,2
+DGS2,US 2Y Yield,MacroFactor,2
+MORTGAGE30US,US 30Y Mortgage,MacroFactor,2
+US_YIELD_CURVE,US Yield Curve,DerivedFactor,2
+USDTHB,USDTHB,FX,2
+FEDFUNDS,Fed Funds Rate,MacroFactor,3

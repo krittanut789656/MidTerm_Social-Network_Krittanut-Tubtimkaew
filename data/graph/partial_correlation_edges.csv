@@ -1,0 +1,15 @@
+source,target,partial_correlation,weight,sign,method,n_obs
+BBL_ret,THAI_BANK_BASKET_ret,0.340206,0.340206,positive,graphical_lasso_weekly,216
+KBANK_ret,THAI_BANK_BASKET_ret,0.280059,0.280059,positive,graphical_lasso_weekly,216
+KKP_ret,THAI_BANK_BASKET_ret,0.310867,0.310867,positive,graphical_lasso_weekly,216
+KTB_ret,THAI_BANK_BASKET_ret,0.318475,0.318475,positive,graphical_lasso_weekly,216
+SCB_ret,THAI_BANK_BASKET_ret,0.32934,0.32934,positive,graphical_lasso_weekly,216
+TISCO_ret,THAI_BANK_BASKET_ret,0.164613,0.164613,positive,graphical_lasso_weekly,216
+TTB_ret,THAI_BANK_BASKET_ret,0.293819,0.293819,positive,graphical_lasso_weekly,216
+XLF_ret,EUFN_ret,0.415456,0.415456,positive,graphical_lasso_weekly,216
+XLF_ret,VIX_CHANGE,-0.301602,0.301602,negative,graphical_lasso_weekly,216
+EUFN_ret,VIX_CHANGE,-0.253978,0.253978,negative,graphical_lasso_weekly,216
+USDTHB_ret,SET_ret,-0.181917,0.181917,negative,graphical_lasso_weekly,216
+DGS2_chg,DGS10_chg,0.643624,0.643624,positive,graphical_lasso_weekly,216
+DGS2_chg,US_YIELD_CURVE_chg,-0.329795,0.329795,negative,graphical_lasso_weekly,216
+DGS10_chg,US_YIELD_CURVE_chg,0.188186,0.188186,positive,graphical_lasso_weekly,216

@@ -1,0 +1,10 @@
+source,target,source_node,target_node,beta,t_stat,p_value,weight,sign,method,n_obs,r_squared
+SET_ret,BBL_ret,SET,BBL,0.518185,5.5551,0.0,0.518185,positive,OLS_weekly,216,0.1762
+SET_ret,KBANK_ret,SET,KBANK,0.538761,5.6675,0.0,0.538761,positive,OLS_weekly,216,0.2101
+VIX_CHANGE,KBANK_ret,VIX,KBANK,-0.039332,-2.5163,0.012618,0.039332,negative,OLS_weekly,216,0.2101
+EUFN_ret,KKP_ret,EUFN,KKP,0.242567,2.2024,0.028742,0.242567,positive,OLS_weekly,216,0.2354
+SET_ret,KKP_ret,SET,KKP,0.731869,6.1068,0.0,0.731869,positive,OLS_weekly,216,0.2354
+SET_ret,KTB_ret,SET,KTB,0.517113,4.9469,2e-06,0.517113,positive,OLS_weekly,216,0.1727
+SET_ret,SCB_ret,SET,SCB,0.418149,4.6995,5e-06,0.418149,positive,OLS_weekly,216,0.1925
+SET_ret,TISCO_ret,SET,TISCO,0.212034,4.8106,3e-06,0.212034,positive,OLS_weekly,216,0.196
+SET_ret,TTB_ret,SET,TTB,0.502098,5.0781,1e-06,0.502098,positive,OLS_weekly,216,0.1669

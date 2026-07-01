@@ -1,0 +1,2 @@
+source,target,source_node,target_node,correlation,weight,sign,lag_weeks,method
+SET_ret,KTB_ret,SET,KTB,0.176618,0.176618,positive,3,lagged_corr_weekly

@@ -1,0 +1,4 @@
+network,edge_count,threshold
+Raw Correlation (validated),60,|r|>=0.15
+Partial Correlation,14,|pc|>=0.15
+Edge Survival Rate,23.3%,partial / raw × 100

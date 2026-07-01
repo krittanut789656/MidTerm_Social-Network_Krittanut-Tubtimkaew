@@ -1,0 +1,19 @@
+node_id,name,type,communityId,silhouette
+XLF,XLF,ETF,0,0.0106
+EUFN,EUFN,ETF,1,0.0106
+FEDFUNDS,Fed Funds Rate,MacroFactor,1,0.0106
+KKP,KKP,Bank,1,0.0106
+TISCO,TISCO,Bank,1,0.0106
+DGS10,US 10Y Yield,MacroFactor,1,0.0106
+DGS2,US 2Y Yield,MacroFactor,1,0.0106
+MORTGAGE30US,US 30Y Mortgage,MacroFactor,1,0.0106
+US_YIELD_CURVE,US Yield Curve,DerivedFactor,1,0.0106
+KTB,KTB,Bank,2,0.0106
+TTB,TTB,Bank,2,0.0106
+USDTHB,USDTHB,FX,2,0.0106
+VIX,VIX,MacroFactor,2,0.0106
+BBL,BBL,Bank,3,0.0106
+KBANK,KBANK,Bank,3,0.0106
+SCB,SCB,Bank,3,0.0106
+SET,SET Index,Index,3,0.0106
+THAI_BANK_BASKET,Thai Bank Basket,DerivedFactor,3,0.0106

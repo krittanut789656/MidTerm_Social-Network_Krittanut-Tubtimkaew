@@ -1,0 +1,19 @@
+node_id,name,ticker,type,label
+BBL,BBL,BBL.BK,Bank,Bank
+DGS10,US 10Y Yield,DGS10,MacroFactor,MacroFactor
+DGS2,US 2Y Yield,DGS2,MacroFactor,MacroFactor
+EUFN,EUFN,EUFN,ETF,ETF
+FEDFUNDS,Fed Funds Rate,FEDFUNDS,MacroFactor,MacroFactor
+KBANK,KBANK,KBANK.BK,Bank,Bank
+KKP,KKP,KKP.BK,Bank,Bank
+KTB,KTB,KTB.BK,Bank,Bank
+MORTGAGE30US,US 30Y Mortgage,MORTGAGE30US,MacroFactor,MacroFactor
+SCB,SCB,SCB.BK,Bank,Bank
+SET,SET Index,^SET.BK,Index,Index
+THAI_BANK_BASKET,Thai Bank Basket,THAI_BANK_BASKET,DerivedFactor,DerivedFactor
+TISCO,TISCO,TISCO.BK,Bank,Bank
+TTB,TTB,TTB.BK,Bank,Bank
+USDTHB,USDTHB,USDTHB=X,FX,FX
+US_YIELD_CURVE,US Yield Curve,DGS10-DGS2,DerivedFactor,DerivedFactor
+VIX,VIX,VIXCLS,MacroFactor,MacroFactor
+XLF,XLF,XLF,ETF,ETF
