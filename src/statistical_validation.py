@@ -23,7 +23,8 @@ log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 
 # These columns must NOT enter correlation analysis
-EXCLUDE_FROM_CORR = {"VIX_LEVEL", "BOT_RATE_HIKE", "BOT_RATE_CUT"}
+# FEDFUNDS_chg excluded: monthly FRED series → weekly ffill(limit=7) → std=0 after .diff() → NaN corr
+EXCLUDE_FROM_CORR = {"VIX_LEVEL", "BOT_RATE_HIKE", "BOT_RATE_CUT", "FEDFUNDS_chg"}
 
 
 def get_corr_cols(df: pd.DataFrame) -> list[str]:
