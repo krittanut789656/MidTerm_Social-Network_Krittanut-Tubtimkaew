@@ -152,9 +152,10 @@ def plot_attribution_network(attr_df: pd.DataFrame, title: str = "Edge Attributi
 
         width = 1.0 + norm * 8.0  # edge width: 1 ถึง 9
         if is_top:
-            color = f"rgba({int(255*norm)}, {int(50*(1-norm))}, 50, {0.4 + 0.6*norm})"
+            # สีแดง-ส้ม บน light background (มี opacity สูงขึ้น)
+            color = f"rgba({int(220*norm + 35)}, {int(80*(1-norm))}, 30, {0.5 + 0.5*norm})"
         else:
-            color = "rgba(180, 180, 180, 0.2)"
+            color = "rgba(160, 160, 160, 0.35)"
 
         fig.add_trace(go.Scatter(
             x=[x0, x1, None], y=[y0, y1, None],
@@ -182,10 +183,10 @@ def plot_attribution_network(attr_df: pd.DataFrame, title: str = "Edge Attributi
             x=[x], y=[y],
             mode="markers+text",
             marker=dict(size=size, color=color,
-                        line=dict(color="white", width=2)),
+                        line=dict(color="#ffffff", width=2)),
             text=[node],
             textposition="top center",
-            textfont=dict(size=9),
+            textfont=dict(size=9, color="#1a1a1a"),
             hoverinfo="text",
             hovertext=f"{node}<br>Type: {node_type}",
             showlegend=False,
@@ -202,16 +203,20 @@ def plot_attribution_network(attr_df: pd.DataFrame, title: str = "Edge Attributi
         ))
 
     fig.update_layout(
-        title=dict(text=title, font=dict(size=14)),
+        title=dict(text=title, font=dict(size=14, color="#1a1a1a")),
         showlegend=True,
-        legend=dict(title="Node Type", x=1.01, y=0.5),
+        legend=dict(title=dict(text="Node Type", font=dict(color="#1a1a1a")),
+                    x=1.01, y=0.5,
+                    font=dict(color="#1a1a1a"),
+                    bgcolor="rgba(255,255,255,0.85)",
+                    bordercolor="#cccccc", borderwidth=1),
         xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
         yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
         height=550,
-        margin=dict(l=20, r=120, t=60, b=20),
-        plot_bgcolor="rgba(15,17,26,0.95)",
+        margin=dict(l=20, r=140, t=60, b=20),
+        plot_bgcolor="#f8f9fa",
         paper_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="white"),
+        font=dict(color="#1a1a1a"),
     )
     return fig
 
@@ -236,16 +241,18 @@ def plot_training_history(history: list) -> go.Figure:
                              yaxis="y2"))
 
     fig.update_layout(
-        title="Training History",
-        xaxis=dict(title="Epoch"),
-        yaxis=dict(title="Loss", side="left"),
+        title=dict(text="Training History", font=dict(color="#1a1a1a")),
+        xaxis=dict(title="Epoch", gridcolor="#e0e0e0", color="#333333"),
+        yaxis=dict(title="Loss", side="left", gridcolor="#e0e0e0", color="#333333"),
         yaxis2=dict(title="Accuracy / AUC", side="right", overlaying="y",
-                    range=[0, 1]),
+                    range=[0, 1], color="#333333"),
         height=350,
-        legend=dict(x=0.7, y=0.95),
-        plot_bgcolor="rgba(15,17,26,0.95)",
+        legend=dict(x=0.7, y=0.95, bgcolor="rgba(255,255,255,0.85)",
+                    bordercolor="#cccccc", borderwidth=1,
+                    font=dict(color="#1a1a1a")),
+        plot_bgcolor="#ffffff",
         paper_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="white"),
+        font=dict(color="#1a1a1a"),
     )
     return fig
 
@@ -421,13 +428,18 @@ if pred_df is not None:
     ))
 
     fig_pred.update_layout(
-        title="Predicted Probability of High Risk — Test Period",
-        xaxis_title="Week", yaxis_title="P(High Risk)",
-        yaxis=dict(range=[0, 1]),
+        title=dict(text="Predicted Probability of High Risk — Test Period",
+                   font=dict(color="#1a1a1a")),
+        xaxis=dict(title="Week", gridcolor="#e0e0e0", color="#333333"),
+        yaxis=dict(title="P(High Risk)", range=[0, 1],
+                   gridcolor="#e0e0e0", color="#333333"),
         height=350,
-        plot_bgcolor="rgba(15,17,26,0.95)",
+        legend=dict(bgcolor="rgba(255,255,255,0.85)",
+                    bordercolor="#cccccc", borderwidth=1,
+                    font=dict(color="#1a1a1a")),
+        plot_bgcolor="#ffffff",
         paper_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="white"),
+        font=dict(color="#1a1a1a"),
     )
     st.plotly_chart(fig_pred, use_container_width=True)
 
